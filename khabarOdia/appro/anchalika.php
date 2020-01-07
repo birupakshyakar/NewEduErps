@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Khabara Odia (ଖବର ଓଡ଼ିଆ)</title>
+        <title>Khabar Odia (ଖବର ଓଡ଼ିଆ)</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -137,16 +137,16 @@
                                             }
                                         ?>   --> 
                                              <li class=''><a href='index.php'>Home</a></li>
-                                             <li class='active'><a href='#'>ଆଞ୍ଚଳିକ</a></li>
-                                             <li class=''><a href='#home-area'>ଅପରାଧ</a></li>
-                                             <li class=''><a href='#home-area'>ମୁଖ୍ୟ ଖବର</a></li>
-                                             <li class=''><a href='#home-area'>ରାଜ୍ୟ</a></li>
-                                             <li class=''><a href='#home-area'>ଖେଳ</a></li>
-                                             <li class=''><a href='#home-area'>ନିଯୁକ୍ତି </a></li>
-                                             <li class=''><a href='#home-area'>ମନୋରଞ୍ଜନ</a></li>
-                                             <li class=''><a href='#home-area'>ଜାତୀୟ</a></li>
-                                             <li class=''><a href='#home-area'>ଭିଡ଼ିଓ</a></li>
-                                             <li class=''><a href='#home-area'>ରାଜନୀତି</a></li>                                                                            
+                                             <li class=''><a href='anchalika.php'>ଆଞ୍ଚଳିକ</a></li>
+                                             <li class=''><a href='aparadha.php'>ଅପରାଧ</a></li>
+                                             <li class=''><a href='mukhyakhabar.php'>ମୁଖ୍ୟ ଖବର</a></li>
+                                             <li class=''><a href='rajya.php'>ରାଜ୍ୟ</a></li>
+                                             <li class=''><a href='khela.php'>ଖେଳ</a></li>
+                                             <li class=''><a href='nijukti.php'>ନିଯୁକ୍ତି </a></li>
+                                             <li class=''><a href='manoranjan.php'>ମନୋରଞ୍ଜନ</a></li>
+                                             <li class=''><a href='jatiya.php'>ଜାତୀୟ</a></li>
+                                             <li class=''><a href='video.php'>ଭିଡ଼ିଓ</a></li>
+                                             <li class=''><a href='rajaniti.php'>ରାଜନୀତି</a></li>                                                                           
                                         </ul>
                                     </nav>
                                 </div>
@@ -430,7 +430,8 @@
                                 <span>
                                     Copyright©
                                     KhabaraOdia</a>
-                                    2020.All right reserved.
+                                    2020.All right reserved. Made By 
+                                    <a href="www.bitwebo.com">Bitwebo</a>
                                 </span>
                             </div>
                         </div>

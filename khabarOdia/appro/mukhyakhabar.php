@@ -165,86 +165,145 @@
                 <div class="ptb-120">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-9 col-md-9 col-sm-12">
-                                <div class="col-lg-12">
-                                    <h3>ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି</h3>
+                            <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0px 0px 0px 0px">
+                                <div class="col-lg-6 col-md-6">
+                                    <h3>ମୁଖ୍ୟ ଖବର</h3>
                                 </div>
-                                <div class="col-lg-12 pl-0">
-                                   <div class="col-lg-6 col-md-6 col-sm-12">
-                                       <p style="color: black">By KO News - January 05, 2020</p>
-                                   </div>
-                                   <div class="col-lg-6 col-md-6 col-sm-12">
-                                       <span class="ml-100"><i class="fa fa-eye" style="color: black"> 34</i></span>
-                                       <span class="ml-20"><i class="fa fa-comment" style="color: black"> 34</i></span>
-                                   </div>
+                                <div class="col-lg-6 col-md-6">
+                                     <h4 class="pull-right">
+                                         <select style="background-color: black;color: white;font-size: 15px">
+                                             <option>Latest</option>
+                                             <option>Latest</option>
+                                             <option>Latest</option>
+                                             <option>Latest</option>
+                                             <option>Latest</option>
+                                         </select>
+                                     </h4>
                                 </div>
-                                <div class="col-lg-12 pl-0">
-                                   <div class="col-lg-6 col-md-6 col-sm-12">
-                                      <img src="img/photo1.png" style="height: 100%;width: 100%;padding: 0px">
-                                   </div>
-                                   <div class="col-lg-6 col-md-6 col-sm-12">
-                                      <img src="img/photo1.png" style="height: 100%;width: 100%">
-                                   </div>
-                                </div>
-                                <br>
-                                <div class="col-lg-12">
-                                    <p style="padding: 0px;color: black">କଟକ(ଓବି ନ୍ୟୁଜ)(ଜଗନ୍ନାଥ ମହାନ୍ତି) : ସକିଲ ଦାଦାଵଟି ମାଗିବା  ମାମଲା ରେ ପୁଣି ଆସିଲା ଏକ ରୋମାଞ୍ଚକର ମୋଡ଼ । ଗିରଫ ହେଲା ଆଉ ଏକ ଝିଅ ସହଯୋଗୀ । ପ୍ରଥମେ ପ୍ରେମିକା ନସରିନ ଖାନ  ଗିରଫ ହେବା ପରେ ଏବେ ଆଉ ଏକ ଝିଅ ସହଯୋଗୀ କୁ ଗିରଫ କରିଛି କମିଶନରେଟ ପୋଲିସ । ସେ ହଉଛନ୍ତି ମଙ୍ଗଳାବାଗ ଥାନା ଅଞ୍ଚଳ ର ରେସମ ଓରଫ ନିଖତ ନସିମ । <br> ତେବେ ବକ୍ସି ବଜାର ରେ ଏକ ବ୍ୟବସାୟୀ କୁ ଦାଦା ବଟି ମାଗିବା ମାମଲା ରେ ଉକ୍ତ ଝିଅ ସହଯୋଗୀ କୁ ଗିରଫ କରି କୋର୍ଟ ଚାଲାଣ କରିଛି ପୋଲିସ ।<br>କଟକ(ଓବି ନ୍ୟୁଜ)(ଜଗନ୍ନାଥ ମହାନ୍ତି) : ସକିଲ ଦାଦାଵଟି ମାଗିବା  ମାମଲା ରେ ପୁଣି ଆସିଲା ଏକ ରୋମାଞ୍ଚକର ମୋଡ଼ । ଗିରଫ ହେଲା ଆଉ ଏକ ଝିଅ ସହଯୋଗୀ । ପ୍ରଥମେ ପ୍ରେମିକା ନସରିନ ଖାନ  ଗିରଫ ହେବା ପରେ ଏବେ ଆଉ ଏକ ଝିଅ ସହଯୋଗୀ କୁ ଗିରଫ କରିଛି କମିଶନରେଟ ପୋଲିସ । ସେ ହଉଛନ୍ତି ମଙ୍ଗଳାବାଗ ଥାନା ଅଞ୍ଚଳ ର ରେସମ ଓରଫ ନିଖତ ନସିମ । <br> ତେବେ ବକ୍ସି ବଜାର ରେ ଏକ ବ୍ୟବସାୟୀ କୁ ଦାଦା ବଟି ମାଗିବା ମାମଲା ରେ ଉକ୍ତ ଝିଅ ସହଯୋଗୀ କୁ ଗିରଫ କରି କୋର୍ଟ ଚାଲାଣ କରିଛି ପୋଲିସ ।<br>କଟକ(ଓବି ନ୍ୟୁଜ)(ଜଗନ୍ନାଥ ମହାନ୍ତି) : ସକିଲ ଦାଦାଵଟି ମାଗିବା  ମାମଲା ରେ ପୁଣି ଆସିଲା ଏକ ରୋମାଞ୍ଚକର ମୋଡ଼ । ଗିରଫ ହେଲା ଆଉ ଏକ ଝିଅ ସହଯୋଗୀ । ପ୍ରଥମେ ପ୍ରେମିକା ନସରିନ ଖାନ  ଗିରଫ ହେବା ପରେ ଏବେ ଆଉ ଏକ ଝିଅ ସହଯୋଗୀ କୁ ଗିରଫ କରିଛି କମିଶନରେଟ ପୋଲିସ । ସେ ହଉଛନ୍ତି ମଙ୍ଗଳାବାଗ ଥାନା ଅଞ୍ଚଳ ର ରେସମ ଓରଫ ନିଖତ ନସିମ । <br> ତେବେ ବକ୍ସି ବଜାର ରେ ଏକ ବ୍ୟବସାୟୀ କୁ ଦାଦା ବଟି ମାଗିବା ମାମଲା ରେ ଉକ୍ତ ଝିଅ ସହଯୋଗୀ କୁ ଗିରଫ କରି କୋର୍ଟ ଚାଲାଣ କରିଛି ପୋଲିସ ।</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-12">
-                                <div class="col-lg-12 col-md-12 col-sm-12 text-center" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;border:1px solid #ccc">
-                                    <p>Advertisement Area</p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-lg-9 col-md-9 col-sm-12">
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <h6>Previous Article</h6>
-                                    <p>ନସରିନ ଖାନ  ଗିରଫ ହେବା ପରେ</p>
-                                </div>
-                                 <div class="col-lg-6 col-md-6 col-sm-12" style="text-align: right;">
-                                    <h6>Previous Article</h6>
-                                    <p>ନସରିନ ଖାନ  ଗିରଫ ହେବା ପରେ</p>
-                                </div>
-                                <div class="col-lg-12" style="margin-top: 80px">
                                 
-                                    <h5 style="border-bottom: 4px solid black;color: white;">
-                                        <span style="background-color: black;font-size: 20px;">Related Article</span>
-                                        <span style="background-color: white;font-size: 20px;color: black">More from Author</span>
-                                    </h5>
-                                    <div class="col-lg-3 col-md-3 col-sm-6 pl-0">
-                                         <img src="img/photo1.png" style="height: 100%;width: 100%">
-                                         <h4>ନସରିନ ଖାନ  ଗିରଫ ହେବା ପରେ</h4>
-                                    </div>
-                                    <div class="col-lg-3 col-md-3 col-sm-6 pl-0">
-                                         <img src="img/photo1.png" style="height: 100%;width: 100%">
-                                         <h4>ନସରିନ ଖାନ  ଗିରଫ ହେବା ପରେ</h4>
-                                    </div>
-                                    <div class="col-lg-3 col-md-3 col-sm-6 pl-0">
-                                         <img src="img/photo1.png" style="height: 100%;width: 100%">
-                                         <h4>ନସରିନ ଖାନ  ଗିରଫ ହେବା ପରେ</h4>
-                                    </div>
-                                    <div class="col-lg-3 col-md-3 col-sm-6 pl-0">
-                                         <img src="img/photo1.png" style="height: 100%;width: 100%">
-                                         <h4>ନସରିନ ଖାନ  ଗିରଫ ହେବା ପରେ</h4>
-                                    </div>                           
-                                </div>
-                                <span class="pl-15">
-                                    <i class="fa fa-angle-left text-center" style="border:1px solid #ccc;width:20px;height: 20px;line-height: 20px"></i>
-                                    <i class="fa fa-angle-right text-center" style="border:1px solid #ccc;width:20px;height: 20px;line-height: 20px"></i>
-                                </span>
                             </div>
-                            <div class="col-lg-3 col-md-3 col-sm-12">
+                        </div>
+                        <div class="row">
+                            <div class="col-6 col-lg-6 col-md-6 col-sm-12" style="height: 465px;padding: 0px 0px 5px 0px;">
+                                <img src="img/photo1.png" style="height: 100%;width: 100%">
+                                <div style="margin-top:-105px;background-color: black ">
+                                    <span style="background: black;color: white;padding: 5px;margin-left: 5px;">ମୁଖ୍ୟ ଖବର</span>
+                                    <h4 style="color: white;margin-top: 12px;margin-left: 5px;">ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି </h4>
+                                    <h6 style="color: white;margin-left: 5px;"><b>December 26,2019</b></h6>
+                                </div>
+                                
+                                
+                            </div>
+                            <div class="col-6 col-lg-6 col-md-6 col-sm-12" style="height: 465px;padding: 0px;">
+                                <div class="col-6 col-lg-6 col-md-6 col-sm-12" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;">
+                                     <img src="img/photo1.png" style="height: 100%;width: 100%">
+                                <div style="margin-top:-105px;background-color: black ">
+                                    <span style="background: black;color: white;padding: 5px;margin-left: 5px;">ମୁଖ୍ୟ ଖବର</span>
+                                    <h4 style="color: white;margin-top: 12px;margin-left: 5px;">ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି </h4>
+                                    <h6 style="color: white;margin-left: 5px;"><b>December 26,2019</b></h6>
+                                </div>
+                                </div>
+                                <div class="col-6 col-lg-6 col-md-6 col-sm-12" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;">
+                                     <img src="img/photo1.png" style="height: 100%;width: 100%">
+                                <div style="margin-top:-105px;background-color: black ">
+                                    <span style="background: black;color: white;padding: 5px;margin-left: 5px;">ମୁଖ୍ୟ ଖବର</span>
+                                    <h4 style="color: white;margin-top: 12px;margin-left: 5px;">ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି </h4>
+                                    <h6 style="color: white;margin-left: 5px;"><b>December 26,2019</b></h6>
+                                </div>
+                                </div>
+                                <div class="col-6 col-lg-6 col-md-6 col-sm-12" style="height: 220px;/* width: 49%; *//* margin-right: 4px; */padding: 0px 0px 0px 5px;">
+                                     <img src="img/photo1.png" style="height: 100%;width: 100%">
+                                <div style="margin-top:-105px;background-color: black ">
+                                    <span style="background: black;color: white;padding: 5px;margin-left: 5px;">ମୁଖ୍ୟ ଖବର</span>
+                                    <h4 style="color: white;margin-top: 12px;margin-left: 5px;">ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି </h4>
+                                    <h6 style="color: white;margin-left: 5px;"><b>December 26,2019</b></h6>
+                                </div>
+                                </div>
+                                <div class="col-6 col-lg-6 col-md-6 col-sm-12" style="height: 220px;/* width: 49%; *//* margin-left: 4px; */padding: 0px 0px 0px 5px;">
+                                     <img src="img/photo1.png" style="height: 100%;width: 100%">
+                                <div style="margin-top:-105px;background-color: black;padding:0px; ">
+                                    <span style="background: black;color: white;padding: 5px;margin-left: 5px;">ମୁଖ୍ୟ ଖବର</span>
+                                    <h4 style="color: white;margin-top: 12px;margin-left: 5px;">ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି </h4>
+                                    <h6 style="color: white;margin-left: 5px;"><b>December 26,2019</b></h6>
+                                </div>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="row" style="margin-top: 50px">
+                            <div class="col-lg-8 col-md-8 col-sm-12">
+                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;">
+                                   <img src="img/photo4.jpg" style="height: 180px;width: 100%"> 
+                                   <h3>ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି</h3>
+                                   <h6><b>December 26,2019</b></h6>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;">
+                                   <img src="img/photo4.jpg" style="height: 180px;width: 100%"> 
+                                   <h3>ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି</h3>
+                                   <h6><b>December 26,2019</b></h6>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;">
+                                   <img src="img/photo4.jpg" style="height: 180px;width: 100%"> 
+                                   <h3>ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି</h3>
+                                   <h6><b>December 26,2019</b></h6>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;">
+                                   <img src="img/photo4.jpg" style="height: 180px;width: 100%"> 
+                                   <h3>ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି</h3>
+                                   <h6><b>December 26,2019</b></h6>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;">
+                                   <img src="img/photo4.jpg" style="height: 180px;width: 100%"> 
+                                   <h3>ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି</h3>
+                                   <h6><b>December 26,2019</b></h6>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;">
+                                   <img src="img/photo4.jpg" style="height: 180px;width: 100%"> 
+                                   <h3>ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି</h3>
+                                   <h6><b>December 26,2019</b></h6>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;">
+                                   <img src="img/photo4.jpg" style="height: 180px;width: 100%"> 
+                                   <h3>ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି</h3>
+                                   <h6><b>December 26,2019</b></h6>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;">
+                                   <img src="img/photo4.jpg" style="height: 180px;width: 100%"> 
+                                   <h3>ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି</h3>
+                                   <h6><b>December 26,2019</b></h6>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;">
+                                   <img src="img/photo4.jpg" style="height: 180px;width: 100%"> 
+                                   <h3>ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି</h3>
+                                   <h6><b>December 26,2019</b></h6>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;">
+                                   <img src="img/photo4.jpg" style="height: 180px;width: 100%"> 
+                                   <h3>ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି</h3>
+                                   <h6><b>December 26,2019</b></h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <div class="col-lg-12 col-md-12 col-sm-12 text-center" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;border:1px solid #ccc">
+                                    <p>Advertisement Area</p>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 text-center" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;border:1px solid #ccc">
+                                    <p>Advertisement Area</p>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 text-center" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;border:1px solid #ccc">
+                                    <p>Advertisement Area</p>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 text-center" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;border:1px solid #ccc">
+                                    <p>Advertisement Area</p>
+                                </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 text-center" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;border:1px solid #ccc">
                                     <p>Advertisement Area</p>
                                 </div>
                             </div>
+
                             
-                        </div>
-                                              
+                            
+                            
+                        </div>                       
                     </div>
                 </div>
             </div>
@@ -262,7 +321,7 @@
                                     <img src="img/photo4.jpg">
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <h4> ଆଞ୍ଚଳିକ ଖବର ବଡ ଜବର </h4>
+                                    <h4> ମୁଖ୍ୟ ଖବର ଖବର ବଡ ଜବର </h4>
                                     <h6><b>December 30, 2019</b></h6>
                                 </div>
                             </div>
@@ -272,7 +331,7 @@
                                     <img src="img/photo4.jpg">
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <h4> ଆଞ୍ଚଳିକ ଖବର ବଡ ଜବର </h4>
+                                    <h4> ମୁଖ୍ୟ ଖବର ଖବର ବଡ ଜବର </h4>
                                     <h6><b>December 30, 2019</b></h6>
                                 </div>
                             </div>
@@ -282,7 +341,7 @@
                                     <img src="img/photo4.jpg">
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <h4> ଆଞ୍ଚଳିକ ଖବର ବଡ ଜବର </h4>
+                                    <h4> ମୁଖ୍ୟ ଖବର ଖବର ବଡ ଜବର </h4>
                                     <h6><b>December 30, 2019</b></h6>
                                 </div>
                             </div>
@@ -294,7 +353,7 @@
                                     <img src="img/photo4.jpg">
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <h4> ଆଞ୍ଚଳିକ ଖବର ବଡ ଜବର </h4>
+                                    <h4> ମୁଖ୍ୟ ଖବର ଖବର ବଡ ଜବର </h4>
                                     <h6><b>December 30, 2019</b></h6>
                                 </div>
                             </div>
@@ -304,7 +363,7 @@
                                     <img src="img/photo4.jpg">
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <h4> ଆଞ୍ଚଳିକ ଖବର ବଡ ଜବର </h4>
+                                    <h4> ମୁଖ୍ୟ ଖବର ଖବର ବଡ ଜବର </h4>
                                     <h6><b>December 30, 2019</b></h6>
                                 </div>
                             </div>
@@ -314,7 +373,7 @@
                                     <img src="img/photo4.jpg">
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <h4> ଆଞ୍ଚଳିକ ଖବର ବଡ ଜବର </h4>
+                                    <h4> ମୁଖ୍ୟ ଖବର ଖବର ବଡ ଜବର </h4>
                                     <h6><b>December 30, 2019</b></h6>
                                 </div>
                             </div>

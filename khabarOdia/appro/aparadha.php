@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Khabara Odia (ଖବର ଓଡ଼ିଆ)</title>
+        <title>Khabar Odia (ଖବର ଓଡ଼ିଆ)</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -128,25 +128,25 @@
                                             {
                                                 if($row['id']==1)
                                                 {
-                                                    echo "<li class='active'><a href='#home-area'>".$row['menuName']."</option>";
+                                                    echo "<li class='active'><a href='#home-area'>".$row['menuName']."</a></li>";
                                                 }
                                                 else
                                                 {
-                                                    echo "<li><a href='#about-area'>".$row['menuName']."</option>";
+                                                    echo "<li><a href='#about-area'>".$row['menuName']."</a></li>";
                                                 }
                                             }
                                         ?>   --> 
-                                             <li class=''><a href='index.php'>Home</option>
-                                             <li class='active'><a href='#'>admin</option>
-                                            <!--  <option value="">ଅପରାଧ</option>
-                                             <option value="">ମୁଖ୍ୟ ଖବର</option>
-                                             <option value="">ରାଜ୍ୟ</option>
-                                             <option value="">ଖେଳ</option>
-                                             <option value="">ନିଯୁକ୍ତି </option>
-                                             <option value="">ମନୋରଞ୍ଜନ</option>
-                                             <option value="">ଜାତୀୟ</option>
-                                             <option value="">ଭିଡ଼ିଓ</option>
-                                             <option value="">ରାଜନୀତି</option>     -->                                                                        
+                                             <li class=''><a href='index.php'>Home</a></li>
+                                             <li class=''><a href='anchalika.php'>ଆଞ୍ଚଳିକ</a></li>
+                                             <li class=''><a href='aparadha.php'>ଅପରାଧ</a></li>
+                                             <li class=''><a href='mukhyakhabar.php'>ମୁଖ୍ୟ ଖବର</a></li>
+                                             <li class=''><a href='rajya.php'>ରାଜ୍ୟ</a></li>
+                                             <li class=''><a href='khela.php'>ଖେଳ</a></li>
+                                             <li class=''><a href='nijukti.php'>ନିଯୁକ୍ତି </a></li>
+                                             <li class=''><a href='manoranjan.php'>ମନୋରଞ୍ଜନ</a></li>
+                                             <li class=''><a href='jatiya.php'>ଜାତୀୟ</a></li>
+                                             <li class=''><a href='video.php'>ଭିଡ଼ିଓ</a></li>
+                                             <li class=''><a href='rajaniti.php'>ରାଜନୀତି</a></li>                                                                            
                                         </ul>
                                     </nav>
                                 </div>
@@ -165,51 +165,145 @@
                 <div class="ptb-120">
                     <div class="container">
                         <div class="row">
-                <!-- <form  method="post" action="song_insert.php" enctype="multipart/form-data"> -->
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                        <div class="col-lg-6 col-md-6">
-                            <label>Section</label><br>
-                            <select  class="dropdownStyle" name="section_name" id="section_name" style="width: 100%">
-                                <option  hidden="hidden">select</option>
-                              
-                                <option value="ଆଞ୍ଚଳିକ">ଆଞ୍ଚଳିକ</option>
-                                 <option value="ଅପରାଧ">ଅପରାଧ</option>
-                                 <option value="ମୁଖ୍ୟ ଖବର">ମୁଖ୍ୟ ଖବର</option>
-                                 <option value="ରାଜ୍ୟ">ରାଜ୍ୟ</option>
-                                 <option value="ଖେଳ">ଖେଳ</option>
-                                 <option value="ନିଯୁକ୍ତି">ନିଯୁକ୍ତି </option>
-                                 <option value="ମନୋରଞ୍ଜନ">ମନୋରଞ୍ଜନ</option>
-                                 <option value="ଜାତୀୟ">ଜାତୀୟ</option>
-                                 <option value="ଭିଡ଼ିଓ">ଭିଡ଼ିଓ</option>
-                                 <option value="ରାଜନୀତି">ରାଜନୀତି</option> 
-                            </select>
-                            <label>Upload Image</label><br>
-                            <input type="file" name="image_path" id="image_path">
-                            <label>News Title</label><br>
-                            <input type="text" name="album_title" id="album_title" class="dropdownStyle">
+                            <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0px 0px 0px 0px">
+                                <div class="col-lg-6 col-md-6">
+                                    <h3>ଅପରାଧ</h3>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                     <h4 class="pull-right">
+                                         <select style="background-color: black;color: white;font-size: 15px">
+                                             <option>Latest</option>
+                                             <option>Latest</option>
+                                             <option>Latest</option>
+                                             <option>Latest</option>
+                                             <option>Latest</option>
+                                         </select>
+                                     </h4>
+                                </div>
+                                
+                            </div>
                         </div>
-                        <div class="col-lg-6 col-md-6">
-                            <label>Category</label><br>
-                            <select name="catagory_name" id="catagory_name" class="dropdownStyle" style="width: 100%">
-                                <option  hidden="hidden">select</option>
-                                <option value="breaking_news">Breaking News</option>
-                                <option value="popular_news">Popular</option>
-                                <option value="editor_pick">Editor Pick</option>
-                            </select> 
-                            <label>News Content</label><br>
-                            <textarea style="height: 200px;width: 100%"></textarea> 
-                        </div>                      
-                        
-                    </div>
-                   
-                    <div class="col-lg-3 col-md-3 col-sm-12 pull-right">
-                        <button onclick="fncn();" class="submit">Submit</button>
-                        <!-- <button>Submit</button> -->
-                        <p id="response"></p>
-                    </div>
-                <!-- </form> -->
-            </div>
-                                              
+                        <div class="row">
+                            <div class="col-6 col-lg-6 col-md-6 col-sm-12" style="height: 465px;padding: 0px 0px 5px 0px;">
+                                <img src="img/photo1.png" style="height: 100%;width: 100%">
+                                <div style="margin-top:-105px;background-color: black ">
+                                    <span style="background: black;color: white;padding: 5px;margin-left: 5px;">ଅପରାଧ</span>
+                                    <h4 style="color: white;margin-top: 12px;margin-left: 5px;">ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି </h4>
+                                    <h6 style="color: white;margin-left: 5px;"><b>December 26,2019</b></h6>
+                                </div>
+                                
+                                
+                            </div>
+                            <div class="col-6 col-lg-6 col-md-6 col-sm-12" style="height: 465px;padding: 0px;">
+                                <div class="col-6 col-lg-6 col-md-6 col-sm-12" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;">
+                                     <img src="img/photo1.png" style="height: 100%;width: 100%">
+                                <div style="margin-top:-105px;background-color: black ">
+                                    <span style="background: black;color: white;padding: 5px;margin-left: 5px;">ଅପରାଧ</span>
+                                    <h4 style="color: white;margin-top: 12px;margin-left: 5px;">ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି </h4>
+                                    <h6 style="color: white;margin-left: 5px;"><b>December 26,2019</b></h6>
+                                </div>
+                                </div>
+                                <div class="col-6 col-lg-6 col-md-6 col-sm-12" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;">
+                                     <img src="img/photo1.png" style="height: 100%;width: 100%">
+                                <div style="margin-top:-105px;background-color: black ">
+                                    <span style="background: black;color: white;padding: 5px;margin-left: 5px;">ଅପରାଧ</span>
+                                    <h4 style="color: white;margin-top: 12px;margin-left: 5px;">ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି </h4>
+                                    <h6 style="color: white;margin-left: 5px;"><b>December 26,2019</b></h6>
+                                </div>
+                                </div>
+                                <div class="col-6 col-lg-6 col-md-6 col-sm-12" style="height: 220px;/* width: 49%; *//* margin-right: 4px; */padding: 0px 0px 0px 5px;">
+                                     <img src="img/photo1.png" style="height: 100%;width: 100%">
+                                <div style="margin-top:-105px;background-color: black ">
+                                    <span style="background: black;color: white;padding: 5px;margin-left: 5px;">ଅପରାଧ</span>
+                                    <h4 style="color: white;margin-top: 12px;margin-left: 5px;">ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି </h4>
+                                    <h6 style="color: white;margin-left: 5px;"><b>December 26,2019</b></h6>
+                                </div>
+                                </div>
+                                <div class="col-6 col-lg-6 col-md-6 col-sm-12" style="height: 220px;/* width: 49%; *//* margin-left: 4px; */padding: 0px 0px 0px 5px;">
+                                     <img src="img/photo1.png" style="height: 100%;width: 100%">
+                                <div style="margin-top:-105px;background-color: black;padding:0px; ">
+                                    <span style="background: black;color: white;padding: 5px;margin-left: 5px;">ଅପରାଧ</span>
+                                    <h4 style="color: white;margin-top: 12px;margin-left: 5px;">ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି </h4>
+                                    <h6 style="color: white;margin-left: 5px;"><b>December 26,2019</b></h6>
+                                </div>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="row" style="margin-top: 50px">
+                            <div class="col-lg-8 col-md-8 col-sm-12">
+                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;">
+                                   <img src="img/photo4.jpg" style="height: 180px;width: 100%"> 
+                                   <h3>ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି</h3>
+                                   <h6><b>December 26,2019</b></h6>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;">
+                                   <img src="img/photo4.jpg" style="height: 180px;width: 100%"> 
+                                   <h3>ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି</h3>
+                                   <h6><b>December 26,2019</b></h6>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;">
+                                   <img src="img/photo4.jpg" style="height: 180px;width: 100%"> 
+                                   <h3>ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି</h3>
+                                   <h6><b>December 26,2019</b></h6>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;">
+                                   <img src="img/photo4.jpg" style="height: 180px;width: 100%"> 
+                                   <h3>ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି</h3>
+                                   <h6><b>December 26,2019</b></h6>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;">
+                                   <img src="img/photo4.jpg" style="height: 180px;width: 100%"> 
+                                   <h3>ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି</h3>
+                                   <h6><b>December 26,2019</b></h6>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;">
+                                   <img src="img/photo4.jpg" style="height: 180px;width: 100%"> 
+                                   <h3>ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି</h3>
+                                   <h6><b>December 26,2019</b></h6>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;">
+                                   <img src="img/photo4.jpg" style="height: 180px;width: 100%"> 
+                                   <h3>ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି</h3>
+                                   <h6><b>December 26,2019</b></h6>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;">
+                                   <img src="img/photo4.jpg" style="height: 180px;width: 100%"> 
+                                   <h3>ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି</h3>
+                                   <h6><b>December 26,2019</b></h6>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;">
+                                   <img src="img/photo4.jpg" style="height: 180px;width: 100%"> 
+                                   <h3>ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି</h3>
+                                   <h6><b>December 26,2019</b></h6>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;">
+                                   <img src="img/photo4.jpg" style="height: 180px;width: 100%"> 
+                                   <h3>ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି</h3>
+                                   <h6><b>December 26,2019</b></h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <div class="col-lg-12 col-md-12 col-sm-12 text-center" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;border:1px solid #ccc">
+                                    <p>Advertisement Area</p>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 text-center" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;border:1px solid #ccc">
+                                    <p>Advertisement Area</p>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 text-center" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;border:1px solid #ccc">
+                                    <p>Advertisement Area</p>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 text-center" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;border:1px solid #ccc">
+                                    <p>Advertisement Area</p>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 text-center" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;border:1px solid #ccc">
+                                    <p>Advertisement Area</p>
+                                </div>
+                            </div>
+
+                            
+                            
+                            
+                        </div>                       
                     </div>
                 </div>
             </div>
@@ -219,7 +313,7 @@
             ============================================ -->
             <footer class="footer-area pt-100">
                 <div class="container">
-                    <!-- <div class="row">
+                    <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <h3>Editor Pick</h3>
                             <div class="row">
@@ -227,7 +321,7 @@
                                     <img src="img/photo4.jpg">
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <h4> ଆଞ୍ଚଳିକ ଖବର ବଡ ଜବର </h4>
+                                    <h4> ଅପରାଧ </h4>
                                     <h6><b>December 30, 2019</b></h6>
                                 </div>
                             </div>
@@ -237,7 +331,7 @@
                                     <img src="img/photo4.jpg">
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <h4> ଆଞ୍ଚଳିକ ଖବର ବଡ ଜବର </h4>
+                                    <h4> ଅପରାଧ </h4>
                                     <h6><b>December 30, 2019</b></h6>
                                 </div>
                             </div>
@@ -247,7 +341,7 @@
                                     <img src="img/photo4.jpg">
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <h4> ଆଞ୍ଚଳିକ ଖବର ବଡ ଜବର </h4>
+                                    <h4> ଅପରାଧ </h4>
                                     <h6><b>December 30, 2019</b></h6>
                                 </div>
                             </div>
@@ -259,7 +353,7 @@
                                     <img src="img/photo4.jpg">
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <h4> ଆଞ୍ଚଳିକ ଖବର ବଡ ଜବର </h4>
+                                    <h4> ଅପରାଧ </h4>
                                     <h6><b>December 30, 2019</b></h6>
                                 </div>
                             </div>
@@ -269,7 +363,7 @@
                                     <img src="img/photo4.jpg">
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <h4> ଆଞ୍ଚଳିକ ଖବର ବଡ ଜବର </h4>
+                                    <h4> ଅପରାଧ </h4>
                                     <h6><b>December 30, 2019</b></h6>
                                 </div>
                             </div>
@@ -279,7 +373,7 @@
                                     <img src="img/photo4.jpg">
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <h4> ଆଞ୍ଚଳିକ ଖବର ବଡ ଜବର </h4>
+                                    <h4> ଅପରାଧ </h4>
                                     <h6><b>December 30, 2019</b></h6>
                                 </div>
                             </div>
@@ -317,7 +411,7 @@
                              </div>
                         </div>
                         
-                    </div><br><br> -->
+                    </div><br><br>
                     <div class="row text-center">
                        <div class="col-md-12 text-center">
                         <div class="footer-all">
@@ -327,9 +421,9 @@
                             <div class="footer-icon">
                                <!--  <p>There are many variations of passages of Lorem Ipsum available,<br> but the majority have suffered alteration in </p> -->
                                 <ul>
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></option>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></option>
-                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></option>                                    
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>                                    
                                 </ul>
                             </div>
                             <div class="footer-text">
