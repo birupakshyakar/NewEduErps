@@ -13,6 +13,14 @@
             enabled: true,
         }
     });
+    
+    $("div.clickableDiv").on('click',function(){
+        var containerElement = $(this).closest("div.clickableDiv").find("p").text();
+       // var newsId=containerElement.querySelector('.news_id');
+        //var newsId = $(this).find('.news_id').text();
+       // console.log('id is'+toString(containerElement));
+        alert("success :"+containerElement);
+    });
     var date1 = new Date().toString();       
         var newDate="";
         var day = date1.substring(0,3);
@@ -124,7 +132,7 @@
         
         newDate = day+month+dateYear;
     window.onload = function(){        
-        document.getElementByClass("currentDate").innerHTML = newDate;
+        document.getElementById("currentDate").innerHTML = newDate;
     }
     
     /*--

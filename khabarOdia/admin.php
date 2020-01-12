@@ -121,32 +121,9 @@
                                 <div class="main-menu float- collapse navbar-collapse" id="main-menu-2">
                                     <nav>                                        
                                         <ul class="menu one-page">
-                                        <!-- <?php
-                                            $sql="select id,menuName from menulist";
-                                            $result=mysqli_query($conn, $sql);
-                                            while($row = mysqli_fetch_array($result))
-                                            {
-                                                if($row['id']==1)
-                                                {
-                                                    echo "<li class='active'><a href='#home-area'>".$row['menuName']."</option>";
-                                                }
-                                                else
-                                                {
-                                                    echo "<li><a href='#about-area'>".$row['menuName']."</option>";
-                                                }
-                                            }
-                                        ?>   --> 
+                                        
                                              <li class=''><a href='index.php'>Home</option>
-                                             <li class='active'><a href='#'>admin</option>
-                                            <!--  <option value="">ଅପରାଧ</option>
-                                             <option value="">ମୁଖ୍ୟ ଖବର</option>
-                                             <option value="">ରାଜ୍ୟ</option>
-                                             <option value="">ଖେଳ</option>
-                                             <option value="">ନିଯୁକ୍ତି </option>
-                                             <option value="">ମନୋରଞ୍ଜନ</option>
-                                             <option value="">ଜାତୀୟ</option>
-                                             <option value="">ଭିଡ଼ିଓ</option>
-                                             <option value="">ରାଜନୀତି</option>     -->                                                                        
+                                             <li class='active'><a href='#'>admin</option>                                                                                                                   
                                         </ul>
                                     </nav>
                                 </div>
@@ -164,51 +141,51 @@
             <div id="service-area">
                 <div class="ptb-120">
                     <div class="container">
-                        <div class="row">
-                <!-- <form  method="post" action="song_insert.php" enctype="multipart/form-data"> -->
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                        <div class="col-lg-6 col-md-6">
-                            <label>Section</label><br>
-                            <select  class="dropdownStyle" name="section_name" id="section_name" style="width: 100%">
-                                <option  hidden="hidden">select</option>
-                              
-                                <option value="ଆଞ୍ଚଳିକ">ଆଞ୍ଚଳିକ</option>
-                                 <option value="ଅପରାଧ">ଅପରାଧ</option>
-                                 <option value="ମୁଖ୍ୟ ଖବର">ମୁଖ୍ୟ ଖବର</option>
-                                 <option value="ରାଜ୍ୟ">ରାଜ୍ୟ</option>
-                                 <option value="ଖେଳ">ଖେଳ</option>
-                                 <option value="ନିଯୁକ୍ତି">ନିଯୁକ୍ତି </option>
-                                 <option value="ମନୋରଞ୍ଜନ">ମନୋରଞ୍ଜନ</option>
-                                 <option value="ଜାତୀୟ">ଜାତୀୟ</option>
-                                 <option value="ଭିଡ଼ିଓ">ଭିଡ଼ିଓ</option>
-                                 <option value="ରାଜନୀତି">ରାଜନୀତି</option> 
-                            </select>
-                            <label>Upload Image</label><br>
-                            <input type="file" name="image_path" id="image_path">
-                            <label>News Title</label><br>
-                            <input type="text" name="album_title" id="album_title" class="dropdownStyle">
+                        <div class="row">                
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="col-lg-6 col-md-6">
+                                    <label>Section</label><br>
+                                    <select  class="dropdownStyle" name="section_name" id="section_name" style="width: 100%">
+                                        <option  hidden="hidden">select</option>
+                                      
+                                        <option value="ଆଞ୍ଚଳିକ">ଆଞ୍ଚଳିକ</option>
+                                         <option value="ଅପରାଧ">ଅପରାଧ</option>
+                                         <option value="ମୁଖ୍ୟ ଖବର">ମୁଖ୍ୟ ଖବର</option>
+                                         <option value="ରାଜ୍ୟ">ରାଜ୍ୟ</option>
+                                         <option value="ଖେଳ">ଖେଳ</option>
+                                         <option value="ନିଯୁକ୍ତି">ନିଯୁକ୍ତି </option>
+                                         <option value="ମନୋରଞ୍ଜନ">ମନୋରଞ୍ଜନ</option>
+                                         <option value="ଜାତୀୟ">ଜାତୀୟ</option>
+                                         <option value="ଭିଡ଼ିଓ">ଭିଡ଼ିଓ</option>
+                                         <option value="ରାଜନୀତି">ରାଜନୀତି</option> 
+                                    </select>
+                                    <label>Upload Image</label><br>
+                                    <input type="file" name="image_path" id="image_path">
+                                    <label>News Title</label><br>
+                                    <input type="text" name="news_title" id="news_title" class="dropdownStyle" style="width: 100%">
+                                    <label>News Date</label><br>
+                                    <input type="date" name="news_date" id="news_date" class="dropdownStyle" style="width: 100%" value="<?php echo date('Y-m-d'); ?>">
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <label>Category</label><br>
+                                    <select name="catagory_name" id="catagory_name" class="dropdownStyle" style="width: 100%">
+                                        <option  hidden="hidden">select</option>
+                                        <option value="breaking_news">Breaking News</option>
+                                        <option value="popular">Popular</option>
+                                        <option value="editor">Editor Pick</option>
+                                    </select> 
+                                    <label>News Content</label><br>
+                                    <textarea style="height: 200px;width: 100%" id="news_content"></textarea> 
+                                </div>                      
+                                
+                            </div>
+                           
+                            <div class="col-lg-3 col-md-3 col-sm-12 pull-right">
+                                <button onclick="fncn();" class="submit">Submit</button>
+                                <!-- <button>Submit</button> -->
+                                <p id="response"></p>
+                            </div>               
                         </div>
-                        <div class="col-lg-6 col-md-6">
-                            <label>Category</label><br>
-                            <select name="catagory_name" id="catagory_name" class="dropdownStyle" style="width: 100%">
-                                <option  hidden="hidden">select</option>
-                                <option value="breaking_news">Breaking News</option>
-                                <option value="popular_news">Popular</option>
-                                <option value="editor_pick">Editor Pick</option>
-                            </select> 
-                            <label>News Content</label><br>
-                            <textarea style="height: 200px;width: 100%"></textarea> 
-                        </div>                      
-                        
-                    </div>
-                   
-                    <div class="col-lg-3 col-md-3 col-sm-12 pull-right">
-                        <button onclick="fncn();" class="submit">Submit</button>
-                        <!-- <button>Submit</button> -->
-                        <p id="response"></p>
-                    </div>
-                <!-- </form> -->
-            </div>
                                               
                     </div>
                 </div>
@@ -336,8 +313,7 @@
                                 <span>
                                     Copyright©
                                     KhabaraOdia</a>
-                                    2020.All right reserved. Made By 
-                                    <a href="www.bitwebo.com">Bitwebo</a>
+                                    2020.All right reserved.
                                 </span>
                             </div>
                         </div>
@@ -346,6 +322,10 @@
                     
                 </div>
             </footer>
+            
+
+
+
             <!-- start scrollUp
             ============================================ -->
             <div id="toTop">
@@ -368,5 +348,59 @@
         <!-- main JS
         ============================================ -->        
         <script src="js/main.js"></script>
+        <script type="text/javascript">
+                var filename;
+                $('#image_path').change(function() {
+                    filename = $('#image_path').val();
+                    filename = filename.replace(/.*[\/\\]/, '');
+                    //alert(filename);
+                });
+
+                        
+                function fncn(){
+                       
+                    var section_name = document.getElementById("section_name").value;
+                    var catagory_name = document.getElementById("catagory_name").value;                   
+                    var news_title = document.getElementById("news_title").value;
+                    var news_content = document.getElementById("news_content").value;
+                    var news_date = document.getElementById("news_date").value;
+
+                   
+                    var file_data = $('#image_path').prop('files')[0];   
+                    var form_data = new FormData();                  
+                    form_data.append('file', file_data);
+                    form_data.append('section', section_name);
+                    form_data.append('news_title', news_title);
+                    form_data.append('news_content', news_content);
+                    form_data.append('news_date', news_date);
+                    form_data.append('catagory_name', catagory_name);
+                    //alert(form_data);  
+                    console.log(JSON.stringify(form_data));
+                    //alert(JSON.stringify(form_data));
+
+                    for (var value of form_data.values()) {
+                       console.log(value); 
+                    }                  
+                     $.ajax({
+                        url: "insert_news.php",
+                        type: "POST",
+                        data: form_data ,
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                        dataType: 'text',
+                        enctype : 'multipart/form-data' ,
+                        success: function (data) {
+                                //alert(data);
+                                $("#response").text(data);
+                                //console.log(data.abc);
+                           // You will get response from your PHP page (what you echo or print)
+                        }   
+                    });
+                    
+
+                
+            }
+            </script>
     </body>
 </html>

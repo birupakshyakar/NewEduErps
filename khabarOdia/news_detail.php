@@ -1,13 +1,21 @@
 <?php
     include 'connection/database_connection.php';
     $conn = OpenCon();
+
+    $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+  //  echo $actual_link;
+    $url_components = parse_url($actual_link);
+    parse_str($url_components['query'], $params);
+    $news_id = $params['news_details_value'];
+   // echo ' ID is '.$params['news_details_value'];
+    
 ?>
 <!doctype html>
 <html class="no-js" lang="zxx">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Khabar Odia (ଖବର ଓଡ଼ିଆ)</title>
+        <title>Khabara Odia (ଖବର ଓଡ଼ିଆ)</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -137,16 +145,16 @@
                                             }
                                         ?>   --> 
                                              <li class=''><a href='index.php'>Home</a></li>
-                                             <li class=''><a href='anchalika.php'>ଆଞ୍ଚଳିକ</a></li>
-                                             <li class=''><a href='aparadha.php'>ଅପରାଧ</a></li>
-                                             <li class=''><a href='mukhyakhabar.php'>ମୁଖ୍ୟ ଖବର</a></li>
-                                             <li class=''><a href='rajya.php'>ରାଜ୍ୟ</a></li>
-                                             <li class=''><a href='khela.php'>ଖେଳ</a></li>
-                                             <li class=''><a href='nijukti.php'>ନିଯୁକ୍ତି </a></li>
-                                             <li class=''><a href='manoranjan.php'>ମନୋରଞ୍ଜନ</a></li>
-                                             <li class=''><a href='jatiya.php'>ଜାତୀୟ</a></li>
-                                             <li class=''><a href='video.php'>ଭିଡ଼ିଓ</a></li>
-                                             <li class=''><a href='rajaniti.php'>ରାଜନୀତି</a></li>                                                                            
+                                             <li class=''><a href='regional.php'>ଆଞ୍ଚଳିକ</a></li>
+                                             <li class=''><a href='#home-area'>ଅପରାଧ</a></li>
+                                             <li class=''><a href='#home-area'>ମୁଖ୍ୟ ଖବର</a></li>
+                                             <li class=''><a href='#home-area'>ରାଜ୍ୟ</a></li>
+                                             <li class=''><a href='#home-area'>ଖେଳ</a></li>
+                                             <li class=''><a href='#home-area'>ନିଯୁକ୍ତି </a></li>
+                                             <li class=''><a href='#home-area'>ମନୋରଞ୍ଜନ</a></li>
+                                             <li class=''><a href='#home-area'>ଜାତୀୟ</a></li>
+                                             <li class=''><a href='#home-area'>ଭିଡ଼ିଓ</a></li>
+                                             <li class=''><a href='#home-area'>ରାଜନୀତି</a></li>                                                                            
                                         </ul>
                                     </nav>
                                 </div>
@@ -166,35 +174,72 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-9 col-md-9 col-sm-12">
-                                <div class="col-lg-12">
-                                    <h3>ବିଲେଇ ଆଖି ବୁଜି କ୍ଷୀର ପିଉଚି</h3>
-                                </div>
-                                <div class="col-lg-12 pl-0">
-                                   <div class="col-lg-6 col-md-6 col-sm-12">
-                                       <p style="color: black">By KO News - January 05, 2020</p>
-                                   </div>
-                                   <div class="col-lg-6 col-md-6 col-sm-12">
-                                       <span class="ml-100"><i class="fa fa-eye" style="color: black"> 34</i></span>
-                                       <span class="ml-20"><i class="fa fa-comment" style="color: black"> 34</i></span>
-                                   </div>
-                                </div>
-                                <div class="col-lg-12 pl-0">
-                                   <div class="col-lg-6 col-md-6 col-sm-12">
-                                      <img src="img/photo1.png" style="height: 100%;width: 100%;padding: 0px">
-                                   </div>
-                                   <div class="col-lg-6 col-md-6 col-sm-12">
-                                      <img src="img/photo1.png" style="height: 100%;width: 100%">
-                                   </div>
-                                </div>
-                                <br>
-                                <div class="col-lg-12">
-                                    <p style="padding: 0px;color: black">କଟକ(ଓବି ନ୍ୟୁଜ)(ଜଗନ୍ନାଥ ମହାନ୍ତି) : ସକିଲ ଦାଦାଵଟି ମାଗିବା  ମାମଲା ରେ ପୁଣି ଆସିଲା ଏକ ରୋମାଞ୍ଚକର ମୋଡ଼ । ଗିରଫ ହେଲା ଆଉ ଏକ ଝିଅ ସହଯୋଗୀ । ପ୍ରଥମେ ପ୍ରେମିକା ନସରିନ ଖାନ  ଗିରଫ ହେବା ପରେ ଏବେ ଆଉ ଏକ ଝିଅ ସହଯୋଗୀ କୁ ଗିରଫ କରିଛି କମିଶନରେଟ ପୋଲିସ । ସେ ହଉଛନ୍ତି ମଙ୍ଗଳାବାଗ ଥାନା ଅଞ୍ଚଳ ର ରେସମ ଓରଫ ନିଖତ ନସିମ । <br> ତେବେ ବକ୍ସି ବଜାର ରେ ଏକ ବ୍ୟବସାୟୀ କୁ ଦାଦା ବଟି ମାଗିବା ମାମଲା ରେ ଉକ୍ତ ଝିଅ ସହଯୋଗୀ କୁ ଗିରଫ କରି କୋର୍ଟ ଚାଲାଣ କରିଛି ପୋଲିସ ।<br>କଟକ(ଓବି ନ୍ୟୁଜ)(ଜଗନ୍ନାଥ ମହାନ୍ତି) : ସକିଲ ଦାଦାଵଟି ମାଗିବା  ମାମଲା ରେ ପୁଣି ଆସିଲା ଏକ ରୋମାଞ୍ଚକର ମୋଡ଼ । ଗିରଫ ହେଲା ଆଉ ଏକ ଝିଅ ସହଯୋଗୀ । ପ୍ରଥମେ ପ୍ରେମିକା ନସରିନ ଖାନ  ଗିରଫ ହେବା ପରେ ଏବେ ଆଉ ଏକ ଝିଅ ସହଯୋଗୀ କୁ ଗିରଫ କରିଛି କମିଶନରେଟ ପୋଲିସ । ସେ ହଉଛନ୍ତି ମଙ୍ଗଳାବାଗ ଥାନା ଅଞ୍ଚଳ ର ରେସମ ଓରଫ ନିଖତ ନସିମ । <br> ତେବେ ବକ୍ସି ବଜାର ରେ ଏକ ବ୍ୟବସାୟୀ କୁ ଦାଦା ବଟି ମାଗିବା ମାମଲା ରେ ଉକ୍ତ ଝିଅ ସହଯୋଗୀ କୁ ଗିରଫ କରି କୋର୍ଟ ଚାଲାଣ କରିଛି ପୋଲିସ ।<br>କଟକ(ଓବି ନ୍ୟୁଜ)(ଜଗନ୍ନାଥ ମହାନ୍ତି) : ସକିଲ ଦାଦାଵଟି ମାଗିବା  ମାମଲା ରେ ପୁଣି ଆସିଲା ଏକ ରୋମାଞ୍ଚକର ମୋଡ଼ । ଗିରଫ ହେଲା ଆଉ ଏକ ଝିଅ ସହଯୋଗୀ । ପ୍ରଥମେ ପ୍ରେମିକା ନସରିନ ଖାନ  ଗିରଫ ହେବା ପରେ ଏବେ ଆଉ ଏକ ଝିଅ ସହଯୋଗୀ କୁ ଗିରଫ କରିଛି କମିଶନରେଟ ପୋଲିସ । ସେ ହଉଛନ୍ତି ମଙ୍ଗଳାବାଗ ଥାନା ଅଞ୍ଚଳ ର ରେସମ ଓରଫ ନିଖତ ନସିମ । <br> ତେବେ ବକ୍ସି ବଜାର ରେ ଏକ ବ୍ୟବସାୟୀ କୁ ଦାଦା ବଟି ମାଗିବା ମାମଲା ରେ ଉକ୍ତ ଝିଅ ସହଯୋଗୀ କୁ ଗିରଫ କରି କୋର୍ଟ ଚାଲାଣ କରିଛି ପୋଲିସ ।</p>
-                                </div>
+                                <?php
+                                        $sql="SELECT * FROM `newlist` where id=".$news_id;// where sub_category='breaking_news' id desc limit 4";
+                                        $result = mysqli_query($conn, $sql);
+                                        $row_cnt = $result->num_rows;
+                                       // echo $row_cnt;
+                                        $row=mysqli_fetch_assoc($result);
+                                        echo '
+
+                                                    <div class="col-lg-12">
+                                                        <h3>'.$row["heading"].'</h3>
+                                                    </div>
+                                                    <div class="col-lg-12 pl-0">
+                                                       <div class="col-lg-6 col-md-6 col-sm-12">
+                                                           <p style="color: black">By KO News - '.$row["date"].'</p>
+                                                       </div>
+                                                       <div class="col-lg-6 col-md-6 col-sm-12">
+                                                           <span class="ml-100"><i class="fa fa-eye" style="color: black"> 34</i></span>
+                                                           <span class="ml-20"><i class="fa fa-comment" style="color: black"> 34</i></span>
+                                                       </div>
+                                                    </div>
+                                                    <div class="col-lg-12 pl-0">
+                                                        <img src="'.$row["image"].'" style="height: 100%;width: 100%;padding: 0px">
+                                                       <!--<div class="col-lg-6 col-md-6 col-sm-12">
+                                                          <img src="img/photo1.png" style="height: 100%;width: 100%;padding: 0px">
+                                                       </div>
+                                                       <div class="col-lg-6 col-md-6 col-sm-12">
+                                                          <img src="img/photo1.png" style="height: 100%;width: 100%">
+                                                       </div>-->
+                                                    </div>
+                                                    <br>
+                                                    <div class="col-lg-12">
+                                                        <p style="padding: 0px;color: black">'.$row["content"].'</p>
+                                                    </div>
+                                        ';                                       
+                                        
+                                    ?>
+                                
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-12">
-                                <div class="col-lg-12 col-md-12 col-sm-12 text-center" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;border:1px solid #ccc">
-                                    <p>Advertisement Area</p>
-                                </div>
+                                <?php 
+
+                             
+                                    $sql="select * from advertisementList order by id desc limit 4";// where sub_category='breaking_news' id desc limit 4";
+                                    $result = mysqli_query($conn, $sql);
+                                    $row_cnt = $result->num_rows;
+                                   // echo $row_cnt;
+                                    for ($i=0; $i < $row_cnt; $i++) { 
+                                        # code...
+                                        $row=mysqli_fetch_array($result);
+                                        if($i==0)
+                                        {
+                                            echo '<div class="col-lg-12 col-md-12 col-sm-12 text-center" style="height: 240px; padding: 0px 0px 5px 5px;border:1px solid #ccc">
+                                                <p class="p-0 m-0">Advertisement Area</p>
+                                                <img src="'.$row["image"].'" style="height:200px;width:100%">
+                                            </div>';
+                                        }
+                                        else
+                                        {
+                                            echo '<div class="col-lg-12 col-md-12 col-sm-12 text-center" style="height: 240px;margin-top:20px; padding: 0px 0px 5px 5px;border:1px solid #ccc">
+                                                <p class="p-0 m-0">Advertisement Area</p>
+                                                <img src="'.$row["image"].'" style="height:200px;width:100%">
+                                            </div>';
+                                        }
+                                    }
+                                    
+                                ?>
                             </div>
                             
                         </div>
@@ -202,14 +247,51 @@
                         <div class="row">
                             <div class="col-lg-9 col-md-9 col-sm-12">
                                 <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <h6>Previous Article</h6>
-                                    <p>ନସରିନ ଖାନ  ଗିରଫ ହେବା ପରେ</p>
+                                    <h6 style="color: black;font-weight: bold">Previous Article</h6>
+                                    <?php
+                                        $new_id = intval($news_id)-1;
+                                         $sql="SELECT * FROM `newlist` where id=".$new_id;
+                                         //echo $sql;// where sub_category='breaking_news' id desc limit 4";
+                                        $result = mysqli_query($conn, $sql);
+                                        $row_cnt = $result->num_rows;
+                                       // echo $row_cnt;
+                                        if($row_cnt!=0)
+                                        {
+                                                 $row=mysqli_fetch_assoc($result);
+
+                                                echo '<p>'.$row["heading"].'</p>';
+                                        }
+                                        else
+                                        {
+                                            echo ' no content';
+                                        }
+                                       
+
+                                    ?>
                                 </div>
-                                 <div class="col-lg-6 col-md-6 col-sm-12" style="text-align: right;">
-                                    <h6>Previous Article</h6>
-                                    <p>ନସରିନ ଖାନ  ଗିରଫ ହେବା ପରେ</p>
+                                <div class="col-lg-6 col-md-6 col-sm-12" style="text-align: right;">
+                                    <h6 style="color: black;font-weight: bold">Next Article</h6>
+                                    <?php
+                                        $new_id = intval($news_id)+1;
+                                         $sql="SELECT * FROM `newlist` where id=".$new_id;// where sub_category='breaking_news' id desc limit 4";
+                                        $result = mysqli_query($conn, $sql);
+                                        $row_cnt = $result->num_rows;
+                                       // echo $row_cnt;
+                                        if($row_cnt!=0)
+                                        {
+                                                 $row=mysqli_fetch_assoc($result);
+
+                                                echo '<p>'.$row["heading"].'</p>';
+                                        }
+                                        else
+                                        {
+                                            echo ' no content';
+                                        }
+                                       
+
+                                    ?>
                                 </div>
-                                <div class="col-lg-12" style="margin-top: 80px">
+                                <!-- <div class="col-lg-12" style="margin-top: 80px">
                                 
                                     <h5 style="border-bottom: 4px solid black;color: white;">
                                         <span style="background-color: black;font-size: 20px;">Related Article</span>
@@ -231,11 +313,11 @@
                                          <img src="img/photo1.png" style="height: 100%;width: 100%">
                                          <h4>ନସରିନ ଖାନ  ଗିରଫ ହେବା ପରେ</h4>
                                     </div>                           
-                                </div>
-                                <span class="pl-15">
+                                </div> -->
+                                <!-- <div class="pl-15">
                                     <i class="fa fa-angle-left text-center" style="border:1px solid #ccc;width:20px;height: 20px;line-height: 20px"></i>
                                     <i class="fa fa-angle-right text-center" style="border:1px solid #ccc;width:20px;height: 20px;line-height: 20px"></i>
-                                </span>
+                                </div> -->
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-12">
                                 <div class="col-lg-12 col-md-12 col-sm-12 text-center" style="height: 240px;/* margin-bottom:5px; */padding: 0px 0px 5px 5px;border:1px solid #ccc">
@@ -252,102 +334,76 @@
             
             <!-- footer area
             ============================================ -->
-            <footer class="footer-area pt-100">
+           <footer class="footer-area pt-100">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <h3>Editor Pick</h3>
-                            <div class="row">
-                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <img src="img/photo4.jpg">
-                                </div>
-                                <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <h4> ଆଞ୍ଚଳିକ ଖବର ବଡ ଜବର </h4>
-                                    <h6><b>December 30, 2019</b></h6>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <img src="img/photo4.jpg">
-                                </div>
-                                <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <h4> ଆଞ୍ଚଳିକ ଖବର ବଡ ଜବର </h4>
-                                    <h6><b>December 30, 2019</b></h6>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <img src="img/photo4.jpg">
-                                </div>
-                                <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <h4> ଆଞ୍ଚଳିକ ଖବର ବଡ ଜବର </h4>
-                                    <h6><b>December 30, 2019</b></h6>
-                                </div>
-                            </div>
+                                <?php
+                                        $sql="select * from newlist where subcategory='editor' order by id desc limit 3";// where sub_category='breaking_news' id desc limit 4";
+                                        $result = mysqli_query($conn, $sql);
+                                        $row_cnt = $result->num_rows;
+                                       // echo $row_cnt;
+                                        while($row=mysqli_fetch_assoc($result))
+                                        {
+                                            echo '<div class="row">
+                                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                                        <img src="'.$row["image"].'">
+                                                    </div>
+                                                    <div class="col-lg-8 col-md-8 col-sm-12">
+                                                        <h4>'.$row["heading"].'</h4>
+                                                        <h6><b>'.$row["date"].'</b></h6>
+                                                    </div>
+                                                </div><br>';
+                                        }                                       
+                                        
+                                    ?>
+
+                           
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <h3>Popular Pick</h3>
-                            <div class="row">
-                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <img src="img/photo4.jpg">
-                                </div>
-                                <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <h4> ଆଞ୍ଚଳିକ ଖବର ବଡ ଜବର </h4>
-                                    <h6><b>December 30, 2019</b></h6>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <img src="img/photo4.jpg">
-                                </div>
-                                <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <h4> ଆଞ୍ଚଳିକ ଖବର ବଡ ଜବର </h4>
-                                    <h6><b>December 30, 2019</b></h6>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <img src="img/photo4.jpg">
-                                </div>
-                                <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <h4> ଆଞ୍ଚଳିକ ଖବର ବଡ ଜବର </h4>
-                                    <h6><b>December 30, 2019</b></h6>
-                                </div>
-                            </div>
+                            <?php
+                                        $sql="select * from newlist where subcategory='popular' order by id desc limit 3";// where sub_category='breaking_news' id desc limit 4";
+                                        $result = mysqli_query($conn, $sql);
+                                        $row_cnt = $result->num_rows;
+                                       // echo $row_cnt;
+                                        while($row=mysqli_fetch_assoc($result))
+                                        {
+                                            echo '<div class="row">
+                                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                                        <img src="'.$row["image"].'">
+                                                    </div>
+                                                    <div class="col-lg-8 col-md-8 col-sm-12">
+                                                        <h4>'.$row["heading"].'</h4>
+                                                        <h6><b>'.$row["date"].'</b></h6>
+                                                    </div>
+                                                </div><br>';
+                                        }                                       
+                                        
+                                    ?>
+                            
                             
                            
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12">
                              <h3>Popular Category</h3>
                              <div class="row">
-                                <div class="col-12" style="padding: 10px">
-                                    <span>Test</span>
-                                    <span class="pull-right">1222</span>
-                                </div>
-                                <div class="col-12" style="padding: 10px">
-                                    <span>Test</span>
-                                    <span class="pull-right">1222</span>
-                                </div>
-                                <div class="col-12" style="padding: 10px">
-                                    <span>Test</span>
-                                    <span class="pull-right">1222</span>
-                                </div>
-                                <div class="col-12" style="padding: 10px">
-                                    <span>Test</span>
-                                    <span class="pull-right">1222</span>
-                                </div>
-                                <div class="col-12" style="padding: 10px">
-                                    <span>Test</span>
-                                    <span class="pull-right">1222</span>
-                                </div>
-                                <div class="col-12" style="padding: 10px">
-                                    <span>Test</span>
-                                    <span class="pull-right">1222</span>
-                                </div>
+                                <?php
+                                        $sql="SELECT count(*) as counter, category FROM `newlist` GROUP BY category order by counter desc";// where sub_category='breaking_news' id desc limit 4";
+                                        $result = mysqli_query($conn, $sql);
+                                        $row_cnt = $result->num_rows;
+                                       // echo $row_cnt;
+                                        while($row=mysqli_fetch_assoc($result))
+                                        {
+                                            echo '<div class="col-12" style="padding: 10px">
+                                                        <span>'.$row["category"].'</span>
+                                                        <span class="pull-right">'.$row["counter"].'</span>
+                                                    </div>';
+                                        }                                       
+                                        
+                                    ?>
+                               
                                  
                              </div>
                         </div>
@@ -360,7 +416,7 @@
                                 <h3>KhabaraOdia</h3>
                             </div>
                             <div class="footer-icon">
-                               <!--  <p>There are many variations of passages of Lorem Ipsum available,<br> but the majority have suffered alteration in </p> -->
+                                <!-- <p>There are many variations of passages of Lorem Ipsum available,<br> but the majority have suffered alteration in </p> -->
                                 <ul>
                                     <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                                     <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -371,8 +427,7 @@
                                 <span>
                                     Copyright©
                                     KhabaraOdia</a>
-                                    2020.All right reserved. Made By 
-                                    <a href="www.bitwebo.com">Bitwebo</a>
+                                    2020.All right reserved.
                                 </span>
                             </div>
                         </div>
