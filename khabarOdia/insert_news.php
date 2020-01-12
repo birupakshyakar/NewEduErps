@@ -19,7 +19,7 @@
 		$newsContent = $_REQUEST['news_content'];
 		
 		//echo json_encode(array("abc"=>'successfuly registered'));
-		$sql = "insert into newlist(category,subcategory,heading,image,content,date) values('$category','$subCategory','$newsTitle','img/$image','$newsContent','$newsDate') ";
+		$sql = "insert into newslist(category,subcategory,heading,image,content,date) values('$category','$subCategory','$newsTitle','img/$image','$newsContent','$newsDate') ";
 		$result = mysqli_query($conn, $sql);
 		if($result)
 		{

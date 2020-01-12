@@ -136,7 +136,7 @@
                         </div>
                         <div class="row">
                             <?php 
-                                $sql="select * from newlist where subcategory='breaking_news' order by id desc limit 4";// where sub_category='breaking_news' id desc limit 4";
+                                $sql="select * from newslist where subcategory='breaking_news' order by id desc limit 4";// where sub_category='breaking_news' id desc limit 4";
                                 $result = mysqli_query($conn, $sql);
                                 $row_cnt = $result->num_rows;
                               
@@ -218,7 +218,7 @@
                              <?php 
 
                              
-                                $sql="select * from newlist where category='ଆଞ୍ଚଳିକ' order by id desc limit 3";// where sub_category='breaking_news' id desc limit 4";
+                                $sql="select * from newslist where category='ଆଞ୍ଚଳିକ' order by id desc limit 3";// where sub_category='breaking_news' id desc limit 4";
                                 $result = mysqli_query($conn, $sql);
                                 $row_cnt = $result->num_rows;
                                // echo $row_cnt;
@@ -242,7 +242,7 @@
                         <div class="row" style="margin-top: 35px">
                             <?php 
                              
-                                $sql="select * from newlist where category='ଆଞ୍ଚଳିକ'  limit 6";// where sub_category='breaking_news' id desc limit 4";
+                                $sql="select * from newslist where category='ଆଞ୍ଚଳିକ'  limit 6";// where sub_category='breaking_news' id desc limit 4";
                                 $result = mysqli_query($conn, $sql);
                                 $row_cnt = $result->num_rows;
                                // echo $row_cnt;
@@ -278,7 +278,7 @@
                             <?php 
 
                              
-                                $sql="select * from newlist where category='ମୁଖ୍ୟ ଖବର' order by id desc  limit 12";// where sub_category='breaking_news' id desc limit 4";
+                                $sql="select * from newslist where category='ମୁଖ୍ୟ ଖବର' order by id desc  limit 12";// where sub_category='breaking_news' id desc limit 4";
                                 $result = mysqli_query($conn, $sql);
                                 $row_cnt = $result->num_rows;
                                // echo $row_cnt;
@@ -304,7 +304,7 @@
                                  <?php 
 
                              
-                                    $sql="select * from newlist where category='ଅପରାଧ' order by id desc  limit 1";// where sub_category='breaking_news' id desc limit 4";
+                                    $sql="select * from newslist where category='ଅପରାଧ' order by id desc  limit 1";// where sub_category='breaking_news' id desc limit 4";
                                     $result = mysqli_query($conn, $sql);
                                     $row_cnt = $result->num_rows;
                                    // echo $row_cnt;
@@ -321,7 +321,7 @@
                                 
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <?php
-                                        $sql="select * from newlist where category='ଅପରାଧ'  limit 4";// where sub_category='breaking_news' id desc limit 4";
+                                        $sql="select * from newslist where category='ଅପରାଧ'  limit 4";// where sub_category='breaking_news' id desc limit 4";
                                         $result = mysqli_query($conn, $sql);
                                         $row_cnt = $result->num_rows;
                                        // echo $row_cnt;
@@ -368,7 +368,7 @@
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding: 0px 0px 0px 0px">
                                 <h3 style="border-bottom: 4px solid tomato;color: white;"><span style="background-color: tomato;font-size: 22px;">ରାଜ୍ୟ</span></h3>
                                 <?php
-                                        $sql="select * from newlist where category='ରାଜ୍ୟ'  limit 6";// where sub_category='breaking_news' id desc limit 4";
+                                        $sql="select * from newslist where category='ରାଜ୍ୟ'  limit 6";// where sub_category='breaking_news' id desc limit 4";
                                         $result = mysqli_query($conn, $sql);
                                         $row_cnt = $result->num_rows;
                                        // echo $row_cnt;
@@ -391,7 +391,7 @@
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding: 0px 0px 0px 15px">
                                 <h3 style="border-bottom: 4px solid tomato;color: white;"><span style="background-color: tomato;font-size: 22px;">ଜାତୀୟ</span></h3>
                                 <?php
-                                        $sql="select * from newlist where category='ଜାତୀୟ'  limit 6";// where sub_category='breaking_news' id desc limit 4";
+                                        $sql="select * from newslist where category='ଜାତୀୟ'  limit 6";// where sub_category='breaking_news' id desc limit 4";
                                         $result = mysqli_query($conn, $sql);
                                         $row_cnt = $result->num_rows;
                                        // echo $row_cnt;
@@ -422,7 +422,7 @@
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <h3>Editor Pick</h3>
                                 <?php
-                                        $sql="select * from newlist where subcategory='editor' order by id desc limit 3";// where sub_category='breaking_news' id desc limit 4";
+                                        $sql="select * from newslist where subcategory='editor' order by id desc limit 3";// where sub_category='breaking_news' id desc limit 4";
                                         $result = mysqli_query($conn, $sql);
                                         $row_cnt = $result->num_rows;
                                        // echo $row_cnt;
@@ -446,7 +446,7 @@
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <h3>Popular Pick</h3>
                             <?php
-                                        $sql="select * from newlist where subcategory='popular' order by id desc limit 3";// where sub_category='breaking_news' id desc limit 4";
+                                        $sql="select * from newslist where subcategory='popular' order by id desc limit 3";// where sub_category='breaking_news' id desc limit 4";
                                         $result = mysqli_query($conn, $sql);
                                         $row_cnt = $result->num_rows;
                                        // echo $row_cnt;
@@ -472,7 +472,7 @@
                              <h3>Popular Category</h3>
                              <div class="row">
                                 <?php
-                                        $sql="SELECT count(*) as counter, category FROM `newlist` GROUP BY category order by counter desc";// where sub_category='breaking_news' id desc limit 4";
+                                        $sql="SELECT count(*) as counter, category FROM `newslist` GROUP BY category order by counter desc";// where sub_category='breaking_news' id desc limit 4";
                                         $result = mysqli_query($conn, $sql);
                                         $row_cnt = $result->num_rows;
                                        // echo $row_cnt;

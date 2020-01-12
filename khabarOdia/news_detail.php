@@ -175,7 +175,7 @@
                         <div class="row">
                             <div class="col-lg-9 col-md-9 col-sm-12">
                                 <?php
-                                        $sql="SELECT * FROM `newlist` where id=".$news_id;// where sub_category='breaking_news' id desc limit 4";
+                                        $sql="SELECT * FROM `newslist` where id=".$news_id;// where sub_category='breaking_news' id desc limit 4";
                                         $result = mysqli_query($conn, $sql);
                                         $row_cnt = $result->num_rows;
                                        // echo $row_cnt;
@@ -250,7 +250,7 @@
                                     <h6 style="color: black;font-weight: bold">Previous Article</h6>
                                     <?php
                                         $new_id = intval($news_id)-1;
-                                         $sql="SELECT * FROM `newlist` where id=".$new_id;
+                                         $sql="SELECT * FROM `newslist` where id=".$new_id;
                                          //echo $sql;// where sub_category='breaking_news' id desc limit 4";
                                         $result = mysqli_query($conn, $sql);
                                         $row_cnt = $result->num_rows;
@@ -273,7 +273,7 @@
                                     <h6 style="color: black;font-weight: bold">Next Article</h6>
                                     <?php
                                         $new_id = intval($news_id)+1;
-                                         $sql="SELECT * FROM `newlist` where id=".$new_id;// where sub_category='breaking_news' id desc limit 4";
+                                         $sql="SELECT * FROM `newslist` where id=".$new_id;// where sub_category='breaking_news' id desc limit 4";
                                         $result = mysqli_query($conn, $sql);
                                         $row_cnt = $result->num_rows;
                                        // echo $row_cnt;
@@ -340,7 +340,7 @@
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <h3>Editor Pick</h3>
                                 <?php
-                                        $sql="select * from newlist where subcategory='editor' order by id desc limit 3";// where sub_category='breaking_news' id desc limit 4";
+                                        $sql="select * from newslist where subcategory='editor' order by id desc limit 3";// where sub_category='breaking_news' id desc limit 4";
                                         $result = mysqli_query($conn, $sql);
                                         $row_cnt = $result->num_rows;
                                        // echo $row_cnt;
@@ -364,7 +364,7 @@
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <h3>Popular Pick</h3>
                             <?php
-                                        $sql="select * from newlist where subcategory='popular' order by id desc limit 3";// where sub_category='breaking_news' id desc limit 4";
+                                        $sql="select * from newslist where subcategory='popular' order by id desc limit 3";// where sub_category='breaking_news' id desc limit 4";
                                         $result = mysqli_query($conn, $sql);
                                         $row_cnt = $result->num_rows;
                                        // echo $row_cnt;
@@ -390,7 +390,7 @@
                              <h3>Popular Category</h3>
                              <div class="row">
                                 <?php
-                                        $sql="SELECT count(*) as counter, category FROM `newlist` GROUP BY category order by counter desc";// where sub_category='breaking_news' id desc limit 4";
+                                        $sql="SELECT count(*) as counter, category FROM `newslist` GROUP BY category order by counter desc";// where sub_category='breaking_news' id desc limit 4";
                                         $result = mysqli_query($conn, $sql);
                                         $row_cnt = $result->num_rows;
                                        // echo $row_cnt;

@@ -168,7 +168,7 @@
                         </div>
                         <div class="row">
                             <?php
-                            $sql="select * from newlist where category='ଆଞ୍ଚଳିକ' order by id desc limit 5";
+                            $sql="select * from newslist where category='ଆଞ୍ଚଳିକ' order by id desc limit 5";
                                 $result = mysqli_query($conn, $sql);
                                 $row_cnt = $result->num_rows;
                               
@@ -247,7 +247,7 @@
                                 <?php 
 
                              
-                                    $sql="select * from newlist where category='ଆଞ୍ଚଳିକ' order by date desc,id asc";// where sub_category='breaking_news' id desc limit 4";
+                                    $sql="select * from newslist where category='ଆଞ୍ଚଳିକ' order by date desc,id asc";// where sub_category='breaking_news' id desc limit 4";
                                     $result = mysqli_query($conn, $sql);
                                     $row_cnt = $result->num_rows;
                                    // echo $row_cnt;
@@ -310,7 +310,7 @@
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <h3>Editor Pick</h3>
                                 <?php
-                                        $sql="select * from newlist where subcategory='editor' order by id desc limit 3";// where sub_category='breaking_news' id desc limit 4";
+                                        $sql="select * from newslist where subcategory='editor' order by id desc limit 3";// where sub_category='breaking_news' id desc limit 4";
                                         $result = mysqli_query($conn, $sql);
                                         $row_cnt = $result->num_rows;
                                        // echo $row_cnt;
@@ -334,7 +334,7 @@
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <h3>Popular Pick</h3>
                             <?php
-                                        $sql="select * from newlist where subcategory='popular' order by id desc limit 3";// where sub_category='breaking_news' id desc limit 4";
+                                        $sql="select * from newslist where subcategory='popular' order by id desc limit 3";// where sub_category='breaking_news' id desc limit 4";
                                         $result = mysqli_query($conn, $sql);
                                         $row_cnt = $result->num_rows;
                                        // echo $row_cnt;
@@ -360,7 +360,7 @@
                              <h3>Popular Category</h3>
                              <div class="row">
                                 <?php
-                                        $sql="SELECT count(*) as counter, category, id FROM `newlist` GROUP BY category order by counter desc";// where sub_category='breaking_news' id desc limit 4";
+                                        $sql="SELECT count(*) as counter, category, id FROM `newslist` GROUP BY category order by counter desc";// where sub_category='breaking_news' id desc limit 4";
                                         $result = mysqli_query($conn, $sql);
                                         $row_cnt = $result->num_rows;
                                        // echo $row_cnt;
